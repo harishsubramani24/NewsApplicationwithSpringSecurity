@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>NewsApplication</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>List Of News</h1>
+        <table border="2">
+            <tr>
+                <th>Logo</th>
+                <th>Id</th>
+                <th>Category</th>
+                <th>Description </th>
+            </tr>
+            <tr th:each="user : ${users}">
+                <td>
+                    <img th:if="${user.id == 1}" th:src="@{/images/NEET.png}" alt="NEET Logo" width="50">
+                    <img th:if="${user.id == 2}" th:src="@{/images/GATE.png}" alt="GATE Logo" width="50">
+                    <img th:if="${user.id == 3}" th:src="@{/images/KTET.png}" alt="KTET Logo" width="50">
+                    <img th:if="${user.id == 4}" th:src="@{/images/UPSC.png}" alt="UPSSSC Logo" width="50">
+                </td>
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.category}"></td>
+                <td th:text="${user.description}"></td>
+            </tr>
+        </table>
+        <br>
+        <div style="text-align: center;">
+            <a href="/addnews">Add Your News</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+form input[type="number"],
+form input[type="text"],
+form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid Black;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: Red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: Purple;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: red;
+    color: #fff;
+}
+
+a {
+    display: block;
+    width: 145px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: Red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: Purple;
+}
